@@ -6,6 +6,7 @@
 //  Copyright © 2020 WeTransfer. All rights reserved.
 //
 
+#if canImport(XCTest)
 import Foundation
 import XCTest
 
@@ -22,3 +23,4 @@ public extension XCTestCase {
         return mockExpectation
     }
 }
+#endif
