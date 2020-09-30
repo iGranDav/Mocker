@@ -16,6 +16,8 @@
 		50D4607020653F2500A85D93 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4605B20653EAF00A85D93 /* MockedData.swift */; };
 		50D4607120653F2700A85D93 /* MockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4605C20653EAF00A85D93 /* MockerTests.swift */; };
 		50D4607320653F4500A85D93 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 50D4607220653F4500A85D93 /* Resources */; };
+		588BE5192524F8C300CDBD2C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588BE5182524F8C300CDBD2C /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		588BE51B2524F8CD00CDBD2C /* libswiftXCTest.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 588BE51A2524F8CD00CDBD2C /* libswiftXCTest.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		50D4606B20653F1F00A85D93 /* Mocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mocker.h; sourceTree = "<group>"; };
 		50D4606D20653F1F00A85D93 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D4607220653F4500A85D93 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		588BE5182524F8C300CDBD2C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		588BE51A2524F8CD00CDBD2C /* libswiftXCTest.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftXCTest.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/libswiftXCTest.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588BE51B2524F8CD00CDBD2C /* libswiftXCTest.tbd in Frameworks */,
+				588BE5192524F8C300CDBD2C /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +81,7 @@
 				50D4606A20653F1F00A85D93 /* Mocker */,
 				50D4605A20653EAF00A85D93 /* MockerTests */,
 				503446131F3DB4660039D5E4 /* Sources */,
+				588BE5172524F8C300CDBD2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,15 @@
 				50D4606D20653F1F00A85D93 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		588BE5172524F8C300CDBD2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				588BE51A2524F8CD00CDBD2C /* libswiftXCTest.tbd */,
+				588BE5182524F8C300CDBD2C /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
